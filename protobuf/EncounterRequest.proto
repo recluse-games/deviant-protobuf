@@ -3,6 +3,7 @@ syntax = "proto3";
 package Deviant;
 
 import "Encounter.proto";
+import "EntityAction.proto";
 
 option go_package = 'deviant';
 
