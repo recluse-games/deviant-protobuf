@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Direction.proto";
+
+option go_package = 'deviant';
 
 message Offset {
     Deviant.Direction direction = 1;

@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Card.proto";
+
+option go_package = 'deviant';
 
 message Hand {
     string id = 1;

@@ -1,7 +1,11 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Tiles.proto";
 import "Entities.proto";
+
+option go_package = 'deviant';
 
 message Board {
     Deviant.Tiles tiles = 1;

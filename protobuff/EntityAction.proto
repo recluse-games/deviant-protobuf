@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "EntityActionNames.proto";
+
+option go_package = 'deviant';
 
 message EntityAction {
     string id = 1;

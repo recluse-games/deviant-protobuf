@@ -1,7 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Encounter.proto";
-import "EntityAction.proto";
+
+option go_package = 'deviant';
 
 service GetEncounter {
   rpc StartEncounter (stream EncounterRequest) returns ( EncounterResponse);

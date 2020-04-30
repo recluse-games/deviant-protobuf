@@ -1,8 +1,11 @@
 syntax = "proto3";
+
 package Deviant;
 
 import "CardAction.proto";
 import "CardType.proto";
+
+option go_package = 'deviant';
 
 message Card {
     string id = 1;
