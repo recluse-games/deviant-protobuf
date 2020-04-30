@@ -1,0 +1,9 @@
+syntax = "proto3";
+package Deviant;
+
+import "Pattern.proto";
+
+message CardAction {
+    string id = 1;
+    repeated Deviant.Pattern pattern = 2;
+}

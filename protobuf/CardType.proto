@@ -1,0 +1,10 @@
+syntax = "proto3";
+package Deviant;
+
+enum CardType {
+    ATTACK = 0;
+    BUFF = 1;
+    DEBUFF = 2;
+    SUMMON = 3;
+    MOVEMENT = 4;
+}

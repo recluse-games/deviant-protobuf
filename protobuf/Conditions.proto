@@ -1,0 +1,6 @@
+syntax = "proto3";
+package Deviant;
+
+enum Conditions {
+    SLOW = 0;
+}

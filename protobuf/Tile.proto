@@ -1,0 +1,6 @@
+syntax = "proto3";
+package Deviant;
+
+message Tile {
+    string id = 1;
+}

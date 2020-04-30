@@ -1,0 +1,24 @@
+syntax = "proto3";
+package Deviant;
+import "Encounter.proto";
+import "EntityAction.proto";
+
+service GetEncounter {
+  rpc StartEncounter (stream EncounterRequest) returns ( EncounterResponse);
+  rpc UpdateEncounter (stream EncounterResponse) returns (stream EncounterResponse);
+  rpc TakeAction (stream EntityActionRequest) returns (stream EncounterResponse);
+}
+
+message EntityActionRequest {
+  EntityAction action = 1;
+}
+
+// The request message containing the user's name.
+message EncounterRequest {
+  string player = 1;
+}
+
+// The response message containing the greetings
+message EncounterResponse {
+  Deviant.Encounter encounter = 1;
+}

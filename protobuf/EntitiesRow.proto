@@ -1,0 +1,7 @@
+syntax = "proto3";
+package Deviant;
+import "Entity.proto";
+
+message EntitiesRow {
+    repeated Deviant.Entity entities = 1;
+}

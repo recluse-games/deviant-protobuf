@@ -1,0 +1,15 @@
+syntax = "proto3";
+package Deviant;
+
+import "CardAction.proto";
+import "CardType.proto";
+
+message Card {
+    string id = 1;
+    int32 cost = 2;
+    string title = 3;
+    string flavor = 4;
+    string description = 5;
+    Deviant.CardType type = 6;
+    Deviant.CardAction action = 7;
+}

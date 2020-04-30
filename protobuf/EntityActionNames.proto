@@ -1,0 +1,8 @@
+syntax = "proto3";
+package Deviant;
+
+enum EntityActionNames {
+    PLAY = 0;
+    DRAW = 1;
+    DISCARD =2;
+}

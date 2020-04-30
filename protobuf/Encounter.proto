@@ -1,0 +1,14 @@
+syntax = "proto3";
+package Deviant;
+import "Board.proto";
+import "Entity.proto";
+import "Turn.proto";
+
+message Encounter {
+    string id = 1;
+    bool completed = 2;
+    Deviant.Board board = 3;
+    Turn turn = 4;
+    repeated string activeEntityOrder = 5;
+    Deviant.Entity activeEntity = 6;
+}

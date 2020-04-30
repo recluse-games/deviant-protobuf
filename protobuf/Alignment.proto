@@ -1,0 +1,7 @@
+syntax = "proto3";
+package Deviant;
+
+enum Alignment {
+    FRIENDLY = 0;
+    UNFRIENDLY = 1;
+}
