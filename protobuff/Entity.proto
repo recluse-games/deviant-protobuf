@@ -1,5 +1,7 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Alignment.proto";
 import "Attachment.proto";
 import "Classes.proto";
@@ -7,6 +9,8 @@ import "Conditions.proto";
 import "Hand.proto";
 import "Deck.proto";
 import "Discard.proto";
+
+option go_package = 'deviant';
 
 message Entity {
     string id = 1;

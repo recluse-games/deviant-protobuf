@@ -1,8 +1,12 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Board.proto";
 import "Entity.proto";
 import "Turn.proto";
+
+option go_package = 'deviant';
 
 message Encounter {
     string id = 1;

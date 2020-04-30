@@ -1,6 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
+
 import "Card.proto";
+
+option go_package = 'deviant';
 
 message Discard {
     string id = 1;

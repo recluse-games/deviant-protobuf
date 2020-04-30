@@ -1,5 +1,8 @@
 syntax = "proto3";
+
 package Deviant;
+
+option go_package = 'deviant';
 
 enum Classes {
     WARRIOR = 0;

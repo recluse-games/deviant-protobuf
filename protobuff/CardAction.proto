@@ -1,7 +1,10 @@
 syntax = "proto3";
+
 package Deviant;
 
 import "Pattern.proto";
+
+option go_package = 'deviant';
 
 message CardAction {
     string id = 1;
