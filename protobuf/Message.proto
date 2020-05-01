@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "Encounter.proto";
+
+option go_package = 'deviant';
+
+message Message {
+    string playerId = 1;
+    Deviant.Encounter encounter = 2;
+}
