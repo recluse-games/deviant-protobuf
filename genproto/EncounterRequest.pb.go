@@ -191,23 +191,13 @@ var file_EncounterRequest_proto_rawDesc = []byte{
 	0x09, 0x65, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x18, 0x01, 0x20, 0x01, 0x28, 0x0b,
 	0x32, 0x12, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75,
 	0x6e, 0x74, 0x65, 0x72, 0x52, 0x09, 0x65, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x32,
-	0xf4, 0x01, 0x0a, 0x0c, 0x47, 0x65, 0x74, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72,
-	0x12, 0x49, 0x0a, 0x0e, 0x53, 0x74, 0x61, 0x72, 0x74, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74,
-	0x65, 0x72, 0x12, 0x19, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63,
-	0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e,
-	0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65,
-	0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x28, 0x01, 0x12, 0x4d, 0x0a, 0x0f, 0x55,
-	0x70, 0x64, 0x61, 0x74, 0x65, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x12, 0x1a,
-	0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74,
-	0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x1a, 0x1a, 0x2e, 0x44, 0x65, 0x76,
-	0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65,
-	0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x28, 0x01, 0x30, 0x01, 0x12, 0x4a, 0x0a, 0x0a, 0x54, 0x61,
-	0x6b, 0x65, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x1c, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61,
-	0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x74, 0x69, 0x74, 0x79, 0x41, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x52,
-	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74,
-	0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
-	0x73, 0x65, 0x28, 0x01, 0x30, 0x01, 0x42, 0x09, 0x5a, 0x07, 0x64, 0x65, 0x76, 0x69, 0x61, 0x6e,
-	0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x59, 0x0a, 0x0c, 0x47, 0x65, 0x74, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x12,
+	0x49, 0x0a, 0x0e, 0x53, 0x74, 0x61, 0x72, 0x74, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65,
+	0x72, 0x12, 0x19, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f,
+	0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e, 0x44,
+	0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x28, 0x01, 0x42, 0x09, 0x5a, 0x07, 0x64, 0x65,
+	0x76, 0x69, 0x61, 0x6e, 0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -234,13 +224,9 @@ var file_EncounterRequest_proto_depIdxs = []int32{
 	3, // 0: Deviant.EntityActionRequest.action:type_name -> Deviant.EntityAction
 	4, // 1: Deviant.EncounterResponse.encounter:type_name -> Deviant.Encounter
 	1, // 2: Deviant.GetEncounter.StartEncounter:input_type -> Deviant.EncounterRequest
-	2, // 3: Deviant.GetEncounter.UpdateEncounter:input_type -> Deviant.EncounterResponse
-	0, // 4: Deviant.GetEncounter.TakeAction:input_type -> Deviant.EntityActionRequest
-	2, // 5: Deviant.GetEncounter.StartEncounter:output_type -> Deviant.EncounterResponse
-	2, // 6: Deviant.GetEncounter.UpdateEncounter:output_type -> Deviant.EncounterResponse
-	2, // 7: Deviant.GetEncounter.TakeAction:output_type -> Deviant.EncounterResponse
-	5, // [5:8] is the sub-list for method output_type
-	2, // [2:5] is the sub-list for method input_type
+	2, // 3: Deviant.GetEncounter.StartEncounter:output_type -> Deviant.EncounterResponse
+	3, // [3:4] is the sub-list for method output_type
+	2, // [2:3] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
 	2, // [2:2] is the sub-list for extension extendee
 	0, // [0:2] is the sub-list for field type_name
@@ -324,8 +310,6 @@ const _ = grpc.SupportPackageIsVersion6
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type GetEncounterClient interface {
 	StartEncounter(ctx context.Context, opts ...grpc.CallOption) (GetEncounter_StartEncounterClient, error)
-	UpdateEncounter(ctx context.Context, opts ...grpc.CallOption) (GetEncounter_UpdateEncounterClient, error)
-	TakeAction(ctx context.Context, opts ...grpc.CallOption) (GetEncounter_TakeActionClient, error)
 }
 
 type getEncounterClient struct {
@@ -370,73 +354,9 @@ func (x *getEncounterStartEncounterClient) CloseAndRecv() (*EncounterResponse, e
 	return m, nil
 }
 
-func (c *getEncounterClient) UpdateEncounter(ctx context.Context, opts ...grpc.CallOption) (GetEncounter_UpdateEncounterClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_GetEncounter_serviceDesc.Streams[1], "/Deviant.GetEncounter/UpdateEncounter", opts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &getEncounterUpdateEncounterClient{stream}
-	return x, nil
-}
-
-type GetEncounter_UpdateEncounterClient interface {
-	Send(*EncounterResponse) error
-	Recv() (*EncounterResponse, error)
-	grpc.ClientStream
-}
-
-type getEncounterUpdateEncounterClient struct {
-	grpc.ClientStream
-}
-
-func (x *getEncounterUpdateEncounterClient) Send(m *EncounterResponse) error {
-	return x.ClientStream.SendMsg(m)
-}
-
-func (x *getEncounterUpdateEncounterClient) Recv() (*EncounterResponse, error) {
-	m := new(EncounterResponse)
-	if err := x.ClientStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
-func (c *getEncounterClient) TakeAction(ctx context.Context, opts ...grpc.CallOption) (GetEncounter_TakeActionClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_GetEncounter_serviceDesc.Streams[2], "/Deviant.GetEncounter/TakeAction", opts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &getEncounterTakeActionClient{stream}
-	return x, nil
-}
-
-type GetEncounter_TakeActionClient interface {
-	Send(*EntityActionRequest) error
-	Recv() (*EncounterResponse, error)
-	grpc.ClientStream
-}
-
-type getEncounterTakeActionClient struct {
-	grpc.ClientStream
-}
-
-func (x *getEncounterTakeActionClient) Send(m *EntityActionRequest) error {
-	return x.ClientStream.SendMsg(m)
-}
-
-func (x *getEncounterTakeActionClient) Recv() (*EncounterResponse, error) {
-	m := new(EncounterResponse)
-	if err := x.ClientStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
 // GetEncounterServer is the server API for GetEncounter service.
 type GetEncounterServer interface {
 	StartEncounter(GetEncounter_StartEncounterServer) error
-	UpdateEncounter(GetEncounter_UpdateEncounterServer) error
-	TakeAction(GetEncounter_TakeActionServer) error
 }
 
 // UnimplementedGetEncounterServer can be embedded to have forward compatible implementations.
@@ -445,12 +365,6 @@ type UnimplementedGetEncounterServer struct {
 
 func (*UnimplementedGetEncounterServer) StartEncounter(GetEncounter_StartEncounterServer) error {
 	return status.Errorf(codes.Unimplemented, "method StartEncounter not implemented")
-}
-func (*UnimplementedGetEncounterServer) UpdateEncounter(GetEncounter_UpdateEncounterServer) error {
-	return status.Errorf(codes.Unimplemented, "method UpdateEncounter not implemented")
-}
-func (*UnimplementedGetEncounterServer) TakeAction(GetEncounter_TakeActionServer) error {
-	return status.Errorf(codes.Unimplemented, "method TakeAction not implemented")
 }
 
 func RegisterGetEncounterServer(s *grpc.Server, srv GetEncounterServer) {
@@ -483,58 +397,6 @@ func (x *getEncounterStartEncounterServer) Recv() (*EncounterRequest, error) {
 	return m, nil
 }
 
-func _GetEncounter_UpdateEncounter_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(GetEncounterServer).UpdateEncounter(&getEncounterUpdateEncounterServer{stream})
-}
-
-type GetEncounter_UpdateEncounterServer interface {
-	Send(*EncounterResponse) error
-	Recv() (*EncounterResponse, error)
-	grpc.ServerStream
-}
-
-type getEncounterUpdateEncounterServer struct {
-	grpc.ServerStream
-}
-
-func (x *getEncounterUpdateEncounterServer) Send(m *EncounterResponse) error {
-	return x.ServerStream.SendMsg(m)
-}
-
-func (x *getEncounterUpdateEncounterServer) Recv() (*EncounterResponse, error) {
-	m := new(EncounterResponse)
-	if err := x.ServerStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
-func _GetEncounter_TakeAction_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(GetEncounterServer).TakeAction(&getEncounterTakeActionServer{stream})
-}
-
-type GetEncounter_TakeActionServer interface {
-	Send(*EncounterResponse) error
-	Recv() (*EntityActionRequest, error)
-	grpc.ServerStream
-}
-
-type getEncounterTakeActionServer struct {
-	grpc.ServerStream
-}
-
-func (x *getEncounterTakeActionServer) Send(m *EncounterResponse) error {
-	return x.ServerStream.SendMsg(m)
-}
-
-func (x *getEncounterTakeActionServer) Recv() (*EntityActionRequest, error) {
-	m := new(EntityActionRequest)
-	if err := x.ServerStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
 var _GetEncounter_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "Deviant.GetEncounter",
 	HandlerType: (*GetEncounterServer)(nil),
@@ -543,18 +405,6 @@ var _GetEncounter_serviceDesc = grpc.ServiceDesc{
 		{
 			StreamName:    "StartEncounter",
 			Handler:       _GetEncounter_StartEncounter_Handler,
-			ClientStreams: true,
-		},
-		{
-			StreamName:    "UpdateEncounter",
-			Handler:       _GetEncounter_UpdateEncounter_Handler,
-			ServerStreams: true,
-			ClientStreams: true,
-		},
-		{
-			StreamName:    "TakeAction",
-			Handler:       _GetEncounter_TakeAction_Handler,
-			ServerStreams: true,
 			ClientStreams: true,
 		},
 	},

@@ -9,8 +9,6 @@ option go_package = 'deviant';
 
 service GetEncounter {
   rpc StartEncounter (stream EncounterRequest) returns ( EncounterResponse);
-  rpc UpdateEncounter (stream EncounterResponse) returns (stream EncounterResponse);
-  rpc TakeAction (stream EntityActionRequest) returns (stream EncounterResponse);
 }
 
 message EntityActionRequest {
