@@ -7,5 +7,7 @@ option go_package = 'deviant';
 enum EntityActionNames {
     PLAY = 0;
     DRAW = 1;
-    DISCARD =2;
+    DISCARD = 2;
+    NOTHING = 3;
+    CHANGE_PHASE = 4;
 }
