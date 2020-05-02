@@ -9,4 +9,5 @@ enum EntityActionNames {
     DRAW = 1;
     DISCARD = 2;
     NOTHING = 3;
+    CHANGE_PHASE = 4;
 }
