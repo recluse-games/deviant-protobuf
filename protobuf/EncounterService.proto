@@ -9,15 +9,11 @@ option go_package = 'deviant';
 
 service EncounterService {
   rpc StartEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
-  rpc UpdateEncounter (stream UpdateEncounterRequest) returns ( stream EncounterResponse);
+  rpc UpdateEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
 }
 
 // The request message containing the user's name.
 message EncounterRequest {
-  string playerId = 1;
-}
-
-message UpdateEncounterRequest {
   string playerId = 1;
   Deviant.Encounter encounter = 2;
   Deviant.EntityActionNames entityActionName = 3;
