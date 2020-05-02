@@ -8,7 +8,7 @@ import "EntityActionNames.proto";
 option go_package = 'deviant';
 
 service GetEncounter {
-  rpc StartEncounter (stream EncounterRequest) returns ( EncounterResponse);
+  rpc StartEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
 }
 
 // The request message containing the user's name.
