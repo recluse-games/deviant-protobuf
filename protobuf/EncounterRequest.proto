@@ -3,7 +3,6 @@ syntax = "proto3";
 package Deviant;
 
 import "Encounter.proto";
-import "EntityActionNames.proto";
 
 option go_package = 'deviant';
 
@@ -14,8 +13,6 @@ service GetEncounter {
 // The request message containing the user's name.
 message EncounterRequest {
   string playerId = 1;
-  Deviant.Encounter encounter = 2;
-  Deviant.EntityActionNames actionName = 3;
 }
 
 // The response message containing the greetings
