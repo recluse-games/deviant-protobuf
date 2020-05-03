@@ -62,7 +62,7 @@ jobs:
         file_pattern: genproto/go/*.pb.go genproto/cs/*.cs
 
         # Optional local file path to the repository
-        repository: .
+        repository: deviant-protobuf
 
         # Optional commit user and author settings
         commit_user_name: recluse-ci-robot
