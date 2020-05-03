@@ -4,11 +4,11 @@ on:
   push:
     branches: [ master ]
     tags:
-      - autogen
+      - 'autogen'
   pull_request:
     branches: [ master ]
     tags:
-      - autogen
+      - 'autogen'
 
 jobs:
   build:
