@@ -26,10 +26,20 @@ jobs:
         path: deviant
         token: ${{ secrets.RECLUSE_CI_ROBOT_TOKEN }}
 
+    # Download the latest built version of unity-meta-gen from artifacts
+    - uses: actions/download-artifact@v2
+      with:
+        name: unity-meta-gen
+        path: recluse-games/unity-meta-gen/build/unity-meta-gen
+
+    # Generate Unity META files for new protobuf cs code
+    - name: Generate Unity Metadata Files For Generated Protocol Buffers
+      run: unity-meta-gen --type script deviant-protobuf/genproto/cs
+
     # Commit updated generated protobuf cs code in deviant package
-    - name: Copy Generated Protocal Buffers From Deviant-Protobuf to Deviant
+    - name: Copy generated protocal buffers from deviant-protobuf to deviant
       run: cp -R deviant-protobuf/genproto/cs deviant/Assets/Scripts/Protobuf
-      
+    
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
         commit_message: Automatic Protocol Buffers Sync
