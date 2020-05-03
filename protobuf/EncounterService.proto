@@ -10,6 +10,7 @@ option go_package = 'deviant';
 service EncounterService {
   rpc StartEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
   rpc UpdateEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
+  rpc TestEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
 }
 
 // The request message containing the user's name.
