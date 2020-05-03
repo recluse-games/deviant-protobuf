@@ -44,7 +44,7 @@ jobs:
 
     # Generate Unity META files for new protobuf cs code
     - name: Generate Unity Metadata Files For Generated Protocol Buffers
-      run: unity-meta-gen --type script deviant-protobuf/genproto/cs
+      run: ./unity-meta-gen --type script deviant-protobuf/genproto/cs
 
     # Commit updated generated protobuf cs code in deviant package
     - name: Copy generated protocal buffers from deviant-protobuf to deviant
