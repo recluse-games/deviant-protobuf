@@ -43,8 +43,8 @@ jobs:
     # Generate the protocol buffers using protoc.
     - name: Generate Protocol Buffers
       run: |
-        protoc --proto_path='protobuf/' --go_out=plugins=grpc:genproto/go/ protobuf/*
-        protoc --proto_path='protobuf/' --csharp_out=genproto/cs/ protobuf/*
+        protoc --proto_path='deviant-protobuf/protobuf/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/ deviant-protobuf/protobuf/*
+        protoc --proto_path='deviant-protobuf/protobuf/' --csharp_out=deviant-protobuf/genproto/cs/ deviant-protobuf/protobuf/*
 
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
