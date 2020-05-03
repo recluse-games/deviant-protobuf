@@ -26,7 +26,7 @@ jobs:
 
     # Commit updated generated protobuf cs code in deviant package
     - name: Copy Generated Protocal Buffers From Deviant-Protobuf to Deviant
-      run: cp -R ./deviant-protobuf/genproto/cs ./deviant/Assets/Scripts/Protobuf
+      run: cp -R deviant-protobuf/genproto/cs deviant/Assets/Scripts/Protobuf
       
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
