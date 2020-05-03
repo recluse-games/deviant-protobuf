@@ -39,3 +39,5 @@ jobs:
         commit_user_name: recluse-ci-robot
         commit_user_email: opensource@recluse-games.com
         commit_author: recluse-ci-robot <opensource@recluse-games.com>
+
+        tagging_message: 'autogen'
