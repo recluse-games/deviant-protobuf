@@ -55,7 +55,7 @@ jobs:
         commit_message: Automatic Protocol Buffers Sync
         branch: ${{ github.head_ref }}
         commit_options: '--no-verify --signoff'
-        file_pattern: Assets/Scripts/Protobuf/**/*
+        file_pattern: Assets/Scripts/Protobuf/**
         repository: deviant
         commit_user_name: recluse-ci-robot
         commit_user_email: opensource@recluse-games.com
