@@ -18,7 +18,7 @@ jobs:
     # Setup Environment
     - name: set latest protoc release tag
       run: |
-        export LATEST_PROTOC_TAG="curl --silent https://api.github.com/repos/protocolbuffers/protobuf/releases/latest | grep '"tag_name":' | cut -d'"' -f4 | cut -c2-"
+        export LATEST_PROTOC_TAG=$(curl --silent https://api.github.com/repos/protocolbuffers/protobuf/releases/latest | grep '"tag_name":' | cut -d'"' -f4 | cut -c2-)
         echo "::set-env name=PROTOC_TAG::$LATEST_PROTOC_TAG"
 
     # Download the latest Protoc release
@@ -37,7 +37,7 @@ jobs:
     - name: install protoc gen
       run: |
         go get github.com/golang/protobuf/protoc-gen-go
-        export GO_BIN_PATH="$(go env GOPATH)/bin"
+        export GO_BIN_PATH=$(go env GOPATH)/bin
         echo "::add-path::$GO_BIN_PATH"
 
     # Generate the protocol buffers using protoc.
