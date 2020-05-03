@@ -1,0 +1,39 @@
+name: Update Consumer
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check-out the latest version of deviant-protobuf from GitHub
+    - uses: actions/checkout@v2
+      with:
+        repository: recluse-games/deviant-protobuf
+        path: deviant-protobuf
+    
+    # Check-out the latest version of deviant from GitHub
+    - uses: actions/checkout@v2
+      with: 
+        repository: recluse-games/deviant
+        path: deviant
+
+    # Commit updated generated protobuf cs code in deviant package
+    - name: Copy Generated Protocal Buffers From Deviant-Protobuf to Deviant
+      run: cp -R ./deviant-protobuf/genproto/cs ./deviant/Assets/Scripts/Protobuf
+      
+    - uses: stefanzweifel/git-auto-commit-action@v4.1.6
+      with:
+        commit_message: Automatic Protocol Buffers Sync
+        branch: ${{ github.head_ref }}
+        commit_options: '--no-verify --signoff'
+        file_pattern: Assets/Scripts/Protobuf/*.cs
+        repository: deviant
+        commit_user_name: recluse-ci-robot
+        commit_user_email: opensource@recluse-games.com
+        commit_author: recluse-ci-robot <opensource@recluse-games.com>
