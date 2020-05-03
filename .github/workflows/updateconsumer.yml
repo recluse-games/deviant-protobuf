@@ -36,7 +36,7 @@ jobs:
 
     # Download the latest built version of unity-meta-gen from release
     - name: download unity-meta-gen
-      run: curl -LO https://github.com/recluse-games/unity-meta-gen/releases/download/v${{ env.PROTOC_TAG }}/unity-meta-gen-${{ env.PROTOC_TAG }}.zip
+      run: curl -LO https://github.com/recluse-games/unity-meta-gen/releases/download/v${{ env.RECLUSE_TAG }}/unity-meta-gen-${{ env.RECLUSE_TAG }}.zip
     
     # Unzip Unity Meta Gen
     - name: unzip unity-meta-gen
