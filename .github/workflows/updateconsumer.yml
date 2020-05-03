@@ -27,15 +27,24 @@ jobs:
         path: deviant
         token: ${{ secrets.RECLUSE_CI_ROBOT_TOKEN }}
 
-    # Download the latest built version of unity-meta-gen from artifacts
-    - uses: actions/download-artifact@v2
-      with:
-        name: unity-meta-gen
-        path: recluse-games/unity-meta-gen/build/unity-meta-gen
+
+    # Setup Environment
+    - name: set the latest unity-meta-gen release tag
+      run: |
+        export LATEST_RECLUSE_TAG=$(curl --silent https://api.github.com/repos/recluse-games/unity-meta-gen/releases/latest | grep '"tag_name":' | cut -d'"' -f4 | cut -c2-)
+        echo "::set-env name=RECLUSE_TAG::$LATEST_RECLUSE_TAG"
+
+    # Download the latest built version of unity-meta-gen from release
+    - name: download unity-meta-gen
+      run: curl -LO https://github.com/recluse-games/unity-meta-gen/releases/download/v${{ env.PROTOC_TAG }}/unity-meta-gen-${{ env.PROTOC_TAG }}.zip
+    
+    # Unzip Unity Meta Gen
+    - name: unzip unity-meta-gen
+      run: unzip unity-meta-gen-${{ env.RECLUSE_TAG }}.zip -d unity-meta-gen
 
     # Generate Unity META files for new protobuf cs code
     - name: Generate Unity Metadata Files For Generated Protocol Buffers
-      run: unity-meta-gen --type script deviant-protobuf/genproto/cs
+      run: unity-meta-gen/unity-meta-gen --type script deviant-protobuf/genproto/cs
 
     # Commit updated generated protobuf cs code in deviant package
     - name: Copy generated protocal buffers from deviant-protobuf to deviant
