@@ -9,8 +9,7 @@ on:
 jobs:
   genproto:
     runs-on: ubuntu-latest
-    container:
-      image: golang/alpine
+    container: golang:alpine
     steps:
     - uses: actions/checkout@v2
       with:
