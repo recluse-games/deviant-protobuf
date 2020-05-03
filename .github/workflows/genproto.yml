@@ -13,9 +13,38 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
+        path: deviant-protobuf
 
-    - name: generate protobufs
-      run: ./genproto_ci.sh
+    # Setup Environment
+    - name: set latest protoc release tag
+      run: |
+        export LATEST_PROTOC_TAG="curl --silent https://api.github.com/repos/protocolbuffers/protobuf/releases/latest | grep '"tag_name":' | cut -d'"' -f4 | cut -c2-"
+        echo "::set-env name=PROTOC_TAG::$LATEST_PROTOC_TAG"
+
+    # Download the latest Protoc release
+    - name: download protoc
+      run: curl -LO https://github.com/protocolbuffers/protobuf/releases/download/v${{ env.PROTOC_TAG }}/protobuf-${{ env.PROTOC_TAG }}-linux-x86_64.zip
+    
+    # Unzip Protoc
+    - name: unzip protoc
+      run: unzip protobuf-${{ env.PROTOC_TAG }}-linux-x86_64.zip -d protoc
+
+    # Add Protoc to System Path
+    - name: append to path
+      run: echo "::add-path::protoc/bin"
+
+    # Install protoc gen from go
+    - name: install protoc gen
+      run: |
+        go get github.com/golang/protobuf/protoc-gen-go
+        export GO_BIN_PATH="$(go env GOPATH)/bin"
+        echo "::add-path::$GO_BIN_PATH"
+
+    # Generate the protocol buffers using protoc.
+    - name: Generate Protocol Buffers
+      run: |
+        protoc --proto_path='protobuf/' --go_out=plugins=grpc:genproto/go/ protobuf/*
+        protoc --proto_path='protobuf/' --csharp_out=genproto/cs/ protobuf/*
 
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
