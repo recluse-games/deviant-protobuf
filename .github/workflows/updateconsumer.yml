@@ -22,6 +22,7 @@ jobs:
       with: 
         repository: recluse-games/deviant
         path: deviant
+        token: ${{ secrets.RECLUSE_CI_ROBOT_TOKEN }}
 
     # Commit updated generated protobuf cs code in deviant package
     - name: Copy Generated Protocal Buffers From Deviant-Protobuf to Deviant
