@@ -3,11 +3,12 @@ name: Update Consumer
 on:
   push:
     paths:
-    - 'genproto/**'
+      - 'genproto/cs/**/*'
+      - 'genproto/go/**/*'
   pull_request:
     paths:
-    - 'genproto/**'
-
+      - 'genproto/cs/**/*'
+      - 'genproto/go/**/*'
 jobs:
   build:
     runs-on: ubuntu-latest
