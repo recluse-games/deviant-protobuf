@@ -2,11 +2,11 @@ name: Update Consumer
 
 on:
   push:
-    tags:
-      - 'autogen'
+    paths:
+    - 'genproto/**/*'
   pull_request:
-    tags:
-      - 'autogen'
+    paths:
+    - 'genproto/**/*'
 
 jobs:
   build:
