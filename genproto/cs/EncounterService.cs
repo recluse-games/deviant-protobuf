@@ -30,13 +30,11 @@ namespace Deviant {
             "LkRldmlhbnQuRW5jb3VudGVyEjQKEGVudGl0eUFjdGlvbk5hbWUYAyABKA4y",
             "Gi5EZXZpYW50LkVudGl0eUFjdGlvbk5hbWVzIkwKEUVuY291bnRlclJlc3Bv",
             "bnNlEhAKCHBsYXllcklkGAEgASgJEiUKCWVuY291bnRlchgCIAEoCzISLkRl",
-            "dmlhbnQuRW5jb3VudGVyMvkBChBFbmNvdW50ZXJTZXJ2aWNlEksKDlN0YXJ0",
+            "dmlhbnQuRW5jb3VudGVyMq0BChBFbmNvdW50ZXJTZXJ2aWNlEksKDlN0YXJ0",
             "RW5jb3VudGVyEhkuRGV2aWFudC5FbmNvdW50ZXJSZXF1ZXN0GhouRGV2aWFu",
             "dC5FbmNvdW50ZXJSZXNwb25zZSgBMAESTAoPVXBkYXRlRW5jb3VudGVyEhku",
             "RGV2aWFudC5FbmNvdW50ZXJSZXF1ZXN0GhouRGV2aWFudC5FbmNvdW50ZXJS",
-            "ZXNwb25zZSgBMAESSgoNVGVzdEVuY291bnRlchIZLkRldmlhbnQuRW5jb3Vu",
-            "dGVyUmVxdWVzdBoaLkRldmlhbnQuRW5jb3VudGVyUmVzcG9uc2UoATABQgla",
-            "B2RldmlhbnRiBnByb3RvMw=="));
+            "ZXNwb25zZSgBMAFCCVoHZGV2aWFudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Deviant.EncounterReflection.Descriptor, global::Deviant.EntityActionNamesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
