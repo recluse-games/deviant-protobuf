@@ -2,10 +2,11 @@ name: Protobuf Code Autogeneration
 
 on:
   push:
-    branches: [ master ]
+    paths:
+    - 'protobuf/**/*'
   pull_request:
-    branches: [ master ]
-
+    paths:
+    - 'protobuf/**/*'
 jobs:
   genproto:
     runs-on: ubuntu-latest
