@@ -15,6 +15,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
         path: deviant-protobuf
+        token: ${{ secrets.RECLUSE_CI_ROBOT_TOKEN }}
 
     # Setup Environment
     - name: set latest protoc release tag
