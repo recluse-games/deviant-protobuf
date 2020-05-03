@@ -27,7 +27,7 @@ jobs:
     
     # Unzip Protoc
     - name: unzip protoc
-      run: unzip protobuf-${{ env.PROTOC_TAG }}-linux-x86_64.zip -d protoc
+      run: unzip protoc-${{ env.PROTOC_TAG }}-linux-x86_64.zip -d protoc
 
     # Add Protoc to System Path
     - name: append to path
