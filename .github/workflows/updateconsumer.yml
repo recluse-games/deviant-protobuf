@@ -2,11 +2,9 @@ name: Update Consumer
 
 on:
   push:
-    branches: [ master ]
     tags:
       - 'autogen'
   pull_request:
-    branches: [ master ]
     tags:
       - 'autogen'
 
