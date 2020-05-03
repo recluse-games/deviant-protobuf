@@ -9,14 +9,13 @@ on:
 jobs:
   genproto:
     runs-on: ubuntu-latest
-    container: golang:alpine
     steps:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
 
     - name: generate protobufs
-      run: apk add protoc && ./genproto.sh
+      run: ./genproto_ci.sh
 
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
