@@ -173,7 +173,7 @@ var file_EncounterService_proto_rawDesc = []byte{
 	0x6c, 0x61, 0x79, 0x65, 0x72, 0x49, 0x64, 0x12, 0x30, 0x0a, 0x09, 0x65, 0x6e, 0x63, 0x6f, 0x75,
 	0x6e, 0x74, 0x65, 0x72, 0x18, 0x02, 0x20, 0x01, 0x28, 0x0b, 0x32, 0x12, 0x2e, 0x44, 0x65, 0x76,
 	0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x09,
-	0x65, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x32, 0xfa, 0x01, 0x0a, 0x10, 0x45, 0x6e,
+	0x65, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x32, 0xad, 0x01, 0x0a, 0x10, 0x45, 0x6e,
 	0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x4b,
 	0x0a, 0x0e, 0x53, 0x74, 0x61, 0x72, 0x74, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72,
 	0x12, 0x19, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75,
@@ -184,13 +184,8 @@ var file_EncounterService_proto_rawDesc = []byte{
 	0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74,
 	0x65, 0x72, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e, 0x44, 0x65, 0x76, 0x69,
 	0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65, 0x73,
-	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x28, 0x01, 0x30, 0x01, 0x12, 0x4b, 0x0a, 0x0e, 0x46, 0x65, 0x6e,
-	0x63, 0x65, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x12, 0x19, 0x2e, 0x44, 0x65,
-	0x76, 0x69, 0x61, 0x6e, 0x74, 0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52,
-	0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x1a, 0x2e, 0x44, 0x65, 0x76, 0x69, 0x61, 0x6e, 0x74,
-	0x2e, 0x45, 0x6e, 0x63, 0x6f, 0x75, 0x6e, 0x74, 0x65, 0x72, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e,
-	0x73, 0x65, 0x28, 0x01, 0x30, 0x01, 0x42, 0x09, 0x5a, 0x07, 0x64, 0x65, 0x76, 0x69, 0x61, 0x6e,
-	0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x28, 0x01, 0x30, 0x01, 0x42, 0x09, 0x5a, 0x07, 0x64, 0x65, 0x76,
+	0x69, 0x61, 0x6e, 0x74, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -218,12 +213,10 @@ var file_EncounterService_proto_depIdxs = []int32{
 	2, // 2: Deviant.EncounterResponse.encounter:type_name -> Deviant.Encounter
 	0, // 3: Deviant.EncounterService.StartEncounter:input_type -> Deviant.EncounterRequest
 	0, // 4: Deviant.EncounterService.UpdateEncounter:input_type -> Deviant.EncounterRequest
-	0, // 5: Deviant.EncounterService.FenceEncounter:input_type -> Deviant.EncounterRequest
-	1, // 6: Deviant.EncounterService.StartEncounter:output_type -> Deviant.EncounterResponse
-	1, // 7: Deviant.EncounterService.UpdateEncounter:output_type -> Deviant.EncounterResponse
-	1, // 8: Deviant.EncounterService.FenceEncounter:output_type -> Deviant.EncounterResponse
-	6, // [6:9] is the sub-list for method output_type
-	3, // [3:6] is the sub-list for method input_type
+	1, // 5: Deviant.EncounterService.StartEncounter:output_type -> Deviant.EncounterResponse
+	1, // 6: Deviant.EncounterService.UpdateEncounter:output_type -> Deviant.EncounterResponse
+	5, // [5:7] is the sub-list for method output_type
+	3, // [3:5] is the sub-list for method input_type
 	3, // [3:3] is the sub-list for extension type_name
 	3, // [3:3] is the sub-list for extension extendee
 	0, // [0:3] is the sub-list for field type_name
@@ -296,7 +289,6 @@ const _ = grpc.SupportPackageIsVersion6
 type EncounterServiceClient interface {
 	StartEncounter(ctx context.Context, opts ...grpc.CallOption) (EncounterService_StartEncounterClient, error)
 	UpdateEncounter(ctx context.Context, opts ...grpc.CallOption) (EncounterService_UpdateEncounterClient, error)
-	FenceEncounter(ctx context.Context, opts ...grpc.CallOption) (EncounterService_FenceEncounterClient, error)
 }
 
 type encounterServiceClient struct {
@@ -369,42 +361,10 @@ func (x *encounterServiceUpdateEncounterClient) Recv() (*EncounterResponse, erro
 	return m, nil
 }
 
-func (c *encounterServiceClient) FenceEncounter(ctx context.Context, opts ...grpc.CallOption) (EncounterService_FenceEncounterClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_EncounterService_serviceDesc.Streams[2], "/Deviant.EncounterService/FenceEncounter", opts...)
-	if err != nil {
-		return nil, err
-	}
-	x := &encounterServiceFenceEncounterClient{stream}
-	return x, nil
-}
-
-type EncounterService_FenceEncounterClient interface {
-	Send(*EncounterRequest) error
-	Recv() (*EncounterResponse, error)
-	grpc.ClientStream
-}
-
-type encounterServiceFenceEncounterClient struct {
-	grpc.ClientStream
-}
-
-func (x *encounterServiceFenceEncounterClient) Send(m *EncounterRequest) error {
-	return x.ClientStream.SendMsg(m)
-}
-
-func (x *encounterServiceFenceEncounterClient) Recv() (*EncounterResponse, error) {
-	m := new(EncounterResponse)
-	if err := x.ClientStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
 // EncounterServiceServer is the server API for EncounterService service.
 type EncounterServiceServer interface {
 	StartEncounter(EncounterService_StartEncounterServer) error
 	UpdateEncounter(EncounterService_UpdateEncounterServer) error
-	FenceEncounter(EncounterService_FenceEncounterServer) error
 }
 
 // UnimplementedEncounterServiceServer can be embedded to have forward compatible implementations.
@@ -416,9 +376,6 @@ func (*UnimplementedEncounterServiceServer) StartEncounter(EncounterService_Star
 }
 func (*UnimplementedEncounterServiceServer) UpdateEncounter(EncounterService_UpdateEncounterServer) error {
 	return status.Errorf(codes.Unimplemented, "method UpdateEncounter not implemented")
-}
-func (*UnimplementedEncounterServiceServer) FenceEncounter(EncounterService_FenceEncounterServer) error {
-	return status.Errorf(codes.Unimplemented, "method FenceEncounter not implemented")
 }
 
 func RegisterEncounterServiceServer(s *grpc.Server, srv EncounterServiceServer) {
@@ -477,32 +434,6 @@ func (x *encounterServiceUpdateEncounterServer) Recv() (*EncounterRequest, error
 	return m, nil
 }
 
-func _EncounterService_FenceEncounter_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(EncounterServiceServer).FenceEncounter(&encounterServiceFenceEncounterServer{stream})
-}
-
-type EncounterService_FenceEncounterServer interface {
-	Send(*EncounterResponse) error
-	Recv() (*EncounterRequest, error)
-	grpc.ServerStream
-}
-
-type encounterServiceFenceEncounterServer struct {
-	grpc.ServerStream
-}
-
-func (x *encounterServiceFenceEncounterServer) Send(m *EncounterResponse) error {
-	return x.ServerStream.SendMsg(m)
-}
-
-func (x *encounterServiceFenceEncounterServer) Recv() (*EncounterRequest, error) {
-	m := new(EncounterRequest)
-	if err := x.ServerStream.RecvMsg(m); err != nil {
-		return nil, err
-	}
-	return m, nil
-}
-
 var _EncounterService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "Deviant.EncounterService",
 	HandlerType: (*EncounterServiceServer)(nil),
@@ -517,12 +448,6 @@ var _EncounterService_serviceDesc = grpc.ServiceDesc{
 		{
 			StreamName:    "UpdateEncounter",
 			Handler:       _EncounterService_UpdateEncounter_Handler,
-			ServerStreams: true,
-			ClientStreams: true,
-		},
-		{
-			StreamName:    "FenceEncounter",
-			Handler:       _EncounterService_FenceEncounter_Handler,
 			ServerStreams: true,
 			ClientStreams: true,
 		},
