@@ -9,11 +9,11 @@ option go_package = 'deviant';
 
 message Card {
     string id = 1;
-    string instanceId = 1;
-    int32 cost = 2;
-    string title = 3;
-    string flavor = 4;
-    string description = 5;
-    Deviant.CardType type = 6;
-    Deviant.CardAction action = 7;
+    string instanceId = 2;
+    int32 cost = 3;
+    string title = 4;
+    string flavor = 5;
+    string description = 6;
+    Deviant.CardType type = 7;
+    Deviant.CardAction action = 8;
 }
