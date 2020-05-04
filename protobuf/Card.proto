@@ -9,6 +9,7 @@ option go_package = 'deviant';
 
 message Card {
     string id = 1;
+    string instanceId = 1;
     int32 cost = 2;
     string title = 3;
     string flavor = 4;
