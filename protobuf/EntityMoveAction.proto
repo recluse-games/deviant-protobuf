@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = 'deviant';
+
+message EntityMoveAction {
+    int32 startXPosition = 1;
+    int32 startYPosition = 2;
+    int32 finalXPosition = 3;
+    int32 finalYPosition = 4;
+}

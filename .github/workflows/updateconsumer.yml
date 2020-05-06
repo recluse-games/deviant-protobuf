@@ -1,0 +1,62 @@
+name: Update Consumer
+
+on:
+  push:
+    paths:
+      - 'genproto/cs/**/*'
+      - 'genproto/go/**/*'
+  pull_request:
+    paths:
+      - 'genproto/cs/**/*'
+      - 'genproto/go/**/*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Check-out the latest version of deviant-protobuf from GitHub
+    - uses: actions/checkout@v2
+      with:
+        repository: recluse-games/deviant-protobuf
+        path: deviant-protobuf
+    
+    # Check-out the latest version of deviant from GitHub
+    - uses: actions/checkout@v2
+      with: 
+        repository: recluse-games/deviant
+        path: deviant
+        token: ${{ secrets.RECLUSE_CI_ROBOT_TOKEN }}
+
+
+    # Setup Environment
+    - name: set the latest unity-meta-gen release tag
+      run: |
+        export LATEST_RECLUSE_TAG=$(curl --silent https://api.github.com/repos/recluse-games/unity-meta-gen/releases/latest | grep '"tag_name":' | cut -d'"' -f4 | cut -c2-)
+        echo "::set-env name=RECLUSE_TAG::$LATEST_RECLUSE_TAG"
+
+    # Download the latest built version of unity-meta-gen from release
+    - name: download unity-meta-gen
+      run: curl -LO https://github.com/recluse-games/unity-meta-gen/releases/download/v${{ env.RECLUSE_TAG }}/unity-meta-gen-${{ env.RECLUSE_TAG }}.zip
+    
+    # Unzip Unity Meta Gen
+    - name: unzip unity-meta-gen
+      run: unzip unity-meta-gen-${{ env.RECLUSE_TAG }}.zip
+
+    # Generate Unity META files for new protobuf cs code
+    - name: Generate Unity Metadata Files For Generated Protocol Buffers
+      run: ./unity-meta-gen --type script deviant-protobuf/genproto/cs
+
+    # Commit updated generated protobuf cs code in deviant package
+    - name: Copy generated protocal buffers from deviant-protobuf to deviant
+      run: cp -R deviant-protobuf/genproto/cs/. deviant/Assets/Scripts/Protobuf
+    
+    - uses: stefanzweifel/git-auto-commit-action@v4.1.6
+      with:
+        commit_message: Automatic Protocol Buffers Sync
+        branch: ${{ github.head_ref }}
+        commit_options: '--no-verify --signoff'
+        file_pattern: Assets/Scripts/Protobuf/**
+        repository: deviant
+        commit_user_name: recluse-ci-robot
+        commit_user_email: opensource@recluse-games.com
+        commit_author: recluse-ci-robot <opensource@recluse-games.com>
