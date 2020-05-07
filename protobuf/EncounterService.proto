@@ -9,9 +9,9 @@ import "EntityMoveAction.proto";
 option go_package = 'deviant';
 
 service EncounterService {
-  rpc FindEncounter (FindEncounterRequest) returns (FindEncounterResponse);
-  rpc StartEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
-  rpc UpdateEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
+  rpc FindEncounter (FindEncounterRequest) returns (stream FindEncounterResponse);
+  rpc StartEncounter (stream EncounterRequest) returns (stream EncounterResponse);
+  rpc UpdateEncounter (stream EncounterRequest) returns (stream EncounterResponse);
 }
 
 // The request message containing the user's name.
