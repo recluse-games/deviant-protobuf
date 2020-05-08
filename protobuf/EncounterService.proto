@@ -5,6 +5,7 @@ package Deviant;
 import "Encounter.proto";
 import "EntityActionNames.proto";
 import "EntityMoveAction.proto";
+import "EntityPlayAction.proto";
 
 option go_package = 'deviant';
 
@@ -20,6 +21,7 @@ message EncounterRequest {
   Deviant.Encounter encounter = 2;
   Deviant.EntityActionNames entityActionName = 3;
   Deviant.EntityMoveAction entityMoveAction = 4;
+  Deviant.EntityPlayAction entityPlayAction = 5;
 }
 
 // The response message containing the greetings
