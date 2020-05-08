@@ -12,9 +12,10 @@ message Card {
     string instanceId = 2;
     string backId = 3;
     int32 cost = 4;
-    string title = 5;
-    string flavor = 6;
-    string description = 7;
-    Deviant.CardType type = 8;
-    Deviant.CardAction action = 9;
+    int32 damage = 5;
+    string title = 6;
+    string flavor = 7;
+    string description = 8;
+    Deviant.CardType type = 9;
+    Deviant.CardAction action = 10;
 }
