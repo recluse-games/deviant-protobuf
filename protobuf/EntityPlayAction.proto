@@ -7,5 +7,6 @@ import "Play.proto";
 
 message EntityPlayAction {
     string id = 1;
+    string cardId = 2;
     repeated Deviant.Play plays = 3;
 }
