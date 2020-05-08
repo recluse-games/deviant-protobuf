@@ -8,14 +8,15 @@ package deviant
 
 import (
 	context "context"
+	reflect "reflect"
+	sync "sync"
+
 	proto "github.com/golang/protobuf/proto"
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (
@@ -39,6 +40,7 @@ type EncounterRequest struct {
 	Encounter        *Encounter        `protobuf:"bytes,2,opt,name=encounter,proto3" json:"encounter,omitempty"`
 	EntityActionName EntityActionNames `protobuf:"varint,3,opt,name=entityActionName,proto3,enum=Deviant.EntityActionNames" json:"entityActionName,omitempty"`
 	EntityMoveAction *EntityMoveAction `protobuf:"bytes,4,opt,name=entityMoveAction,proto3" json:"entityMoveAction,omitempty"`
+	EntityPlayAction *EntityPlayAction `protobuf:"bytes,5,opt,name=entityPlayAction,proto3" json:"entityPlayAction,omitempty"`
 }
 
 func (x *EncounterRequest) Reset() {
@@ -97,6 +99,13 @@ func (x *EncounterRequest) GetEntityActionName() EntityActionNames {
 func (x *EncounterRequest) GetEntityMoveAction() *EntityMoveAction {
 	if x != nil {
 		return x.EntityMoveAction
+	}
+	return nil
+}
+
+func (x *EncounterRequest) GetEntityPlayAction() *EntityPlayAction {
+	if x != nil {
+		return x.EntityPlayAction
 	}
 	return nil
 }
@@ -356,6 +365,7 @@ func file_EncounterService_proto_init() {
 	file_Encounter_proto_init()
 	file_EntityActionNames_proto_init()
 	file_EntityMoveAction_proto_init()
+	file_EntityPlayAction_proto_init()
 	if !protoimpl.UnsafeEnabled {
 		file_EncounterService_proto_msgTypes[0].Exporter = func(v interface{}, i int) interface{} {
 			switch v := v.(*EncounterRequest); i {
