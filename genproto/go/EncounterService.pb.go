@@ -36,11 +36,12 @@ type EncounterRequest struct {
 	sizeCache     protoimpl.SizeCache
 	unknownFields protoimpl.UnknownFields
 
-	PlayerId         string            `protobuf:"bytes,1,opt,name=playerId,proto3" json:"playerId,omitempty"`
-	Encounter        *Encounter        `protobuf:"bytes,2,opt,name=encounter,proto3" json:"encounter,omitempty"`
-	EntityActionName EntityActionNames `protobuf:"varint,3,opt,name=entityActionName,proto3,enum=Deviant.EntityActionNames" json:"entityActionName,omitempty"`
-	EntityMoveAction *EntityMoveAction `protobuf:"bytes,4,opt,name=entityMoveAction,proto3" json:"entityMoveAction,omitempty"`
-	EntityPlayAction *EntityPlayAction `protobuf:"bytes,5,opt,name=entityPlayAction,proto3" json:"entityPlayAction,omitempty"`
+	PlayerId          string            `protobuf:"bytes,1,opt,name=playerId,proto3" json:"playerId,omitempty"`
+	Encounter         *Encounter        `protobuf:"bytes,2,opt,name=encounter,proto3" json:"encounter,omitempty"`
+	EntityActionName  EntityActionNames `protobuf:"varint,3,opt,name=entityActionName,proto3,enum=Deviant.EntityActionNames" json:"entityActionName,omitempty"`
+	EntityMoveAction  *EntityMoveAction `protobuf:"bytes,4,opt,name=entityMoveAction,proto3" json:"entityMoveAction,omitempty"`
+	EntityPlayAction  *EntityPlayAction `protobuf:"bytes,5,opt,name=entityPlayAction,proto3" json:"entityPlayAction,omitempty"`
+	GetEncounterState bool              `protobuf:"varint,6,opt,name=getEncounterState,proto3" json:"getEncounterState,omitempty"`
 }
 
 func (x *EncounterRequest) Reset() {
@@ -108,6 +109,13 @@ func (x *EncounterRequest) GetEntityPlayAction() *EntityPlayAction {
 		return x.EntityPlayAction
 	}
 	return nil
+}
+
+func (x *EncounterRequest) GetGetEncounterState() bool {
+	if x != nil {
+		return x.GetEncounterState
+	}
+	return false
 }
 
 // The response message containing the greetings

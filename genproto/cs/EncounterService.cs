@@ -87,6 +87,7 @@ namespace Deviant {
       entityActionName_ = other.entityActionName_;
       entityMoveAction_ = other.entityMoveAction_ != null ? other.entityMoveAction_.Clone() : null;
       entityPlayAction_ = other.entityPlayAction_ != null ? other.entityPlayAction_.Clone() : null;
+      getEncounterState_ = other.getEncounterState_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -150,6 +151,17 @@ namespace Deviant {
       }
     }
 
+    /// <summary>Field number for the "getEncounterState" field.</summary>
+    public const int GetEncounterStateFieldNumber = 6;
+    private bool getEncounterState_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool GetEncounterState {
+      get { return getEncounterState_; }
+      set {
+        getEncounterState_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as EncounterRequest);
@@ -168,6 +180,7 @@ namespace Deviant {
       if (EntityActionName != other.EntityActionName) return false;
       if (!object.Equals(EntityMoveAction, other.EntityMoveAction)) return false;
       if (!object.Equals(EntityPlayAction, other.EntityPlayAction)) return false;
+      if (GetEncounterState != other.GetEncounterState) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -179,6 +192,7 @@ namespace Deviant {
       if (EntityActionName != global::Deviant.EntityActionNames.Play) hash ^= EntityActionName.GetHashCode();
       if (entityMoveAction_ != null) hash ^= EntityMoveAction.GetHashCode();
       if (entityPlayAction_ != null) hash ^= EntityPlayAction.GetHashCode();
+      if (GetEncounterState != false) hash ^= GetEncounterState.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -212,6 +226,10 @@ namespace Deviant {
         output.WriteRawTag(42);
         output.WriteMessage(EntityPlayAction);
       }
+      if (GetEncounterState != false) {
+        output.WriteRawTag(48);
+        output.WriteBool(GetEncounterState);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -234,6 +252,9 @@ namespace Deviant {
       }
       if (entityPlayAction_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(EntityPlayAction);
+      }
+      if (GetEncounterState != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -269,6 +290,9 @@ namespace Deviant {
           EntityPlayAction = new global::Deviant.EntityPlayAction();
         }
         EntityPlayAction.MergeFrom(other.EntityPlayAction);
+      }
+      if (other.GetEncounterState != false) {
+        GetEncounterState = other.GetEncounterState;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -308,6 +332,10 @@ namespace Deviant {
               EntityPlayAction = new global::Deviant.EntityPlayAction();
             }
             input.ReadMessage(EntityPlayAction);
+            break;
+          }
+          case 48: {
+            GetEncounterState = input.ReadBool();
             break;
           }
         }
