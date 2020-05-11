@@ -22,6 +22,7 @@ message EncounterRequest {
   Deviant.EntityActionNames entityActionName = 3;
   Deviant.EntityMoveAction entityMoveAction = 4;
   Deviant.EntityPlayAction entityPlayAction = 5;
+  bool getEncounterState = 6;
 }
 
 // The response message containing the greetings
