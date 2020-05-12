@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = 'deviant';
+import "Tiles.proto";
+
+message EntityTargetAction {
+    string id = 1;
+    repeated Deviant.Tiles tiles = 2;
+}

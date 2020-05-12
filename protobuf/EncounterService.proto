@@ -21,6 +21,7 @@ message EncounterRequest {
   Deviant.EntityActionNames entityActionName = 3;
   Deviant.EntityMoveAction entityMoveAction = 4;
   Deviant.EntityPlayAction entityPlayAction = 5;
+  Deviant.EntityTargetAction entityTargetAction = 6;
   bool getEncounterState = 6;
 }
 
