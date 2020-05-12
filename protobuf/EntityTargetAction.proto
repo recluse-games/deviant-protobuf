@@ -7,5 +7,5 @@ import "Tiles.proto";
 
 message EntityTargetAction {
     string id = 1;
-    repeated Deviant.Tiles tiles = 2;
+    Deviant.Tiles tiles = 2;
 }
