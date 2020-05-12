@@ -10,4 +10,5 @@ option go_package = 'deviant';
 message Board {
     Deviant.Tiles tiles = 1;
     Deviant.Entities entities = 2;
+    Deviant.Tiles overlayTiles = 3;
 }
