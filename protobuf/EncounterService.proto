@@ -6,6 +6,7 @@ import "Encounter.proto";
 import "EntityActionNames.proto";
 import "EntityMoveAction.proto";
 import "EntityPlayAction.proto";
+import "EntityTargetAction.proto";
 
 option go_package = 'deviant';
 
