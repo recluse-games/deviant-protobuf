@@ -3,7 +3,7 @@ syntax = "proto3";
 package Deviant;
 
 option go_package = 'deviant';
-import "Tiles.proto";
+import "Tile.proto";
 
 message EntityTargetAction {
     string id = 1;
