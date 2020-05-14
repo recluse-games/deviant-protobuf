@@ -4,6 +4,7 @@ package Deviant;
 
 import "Tiles.proto";
 import "Entities.proto";
+import "Tile.proto";
 
 option go_package = 'deviant';
 
