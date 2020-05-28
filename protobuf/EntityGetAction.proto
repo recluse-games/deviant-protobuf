@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = 'deviant';
+
+message EntityGetAction {
+    string PlayerId = 0;
+}
