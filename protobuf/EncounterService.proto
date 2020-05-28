@@ -7,6 +7,7 @@ import "EntityActionNames.proto";
 import "EntityMoveAction.proto";
 import "EntityPlayAction.proto";
 import "EntityTargetAction.proto";
+import "EntityStateAction.proto";
 
 option go_package = 'deviant';
 
@@ -23,7 +24,8 @@ message EncounterRequest {
   Deviant.EntityMoveAction entityMoveAction = 4;
   Deviant.EntityPlayAction entityPlayAction = 5;
   Deviant.EntityTargetAction entityTargetAction = 6;
-  bool getEncounterState = 7;
+  Deviant.EntityStateAction entityStateAction = 7;
+  bool getEncounterState = 8;
 }
 
 // The response message containing the greetings
