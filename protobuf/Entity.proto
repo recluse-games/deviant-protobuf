@@ -27,4 +27,5 @@ message Entity {
     Deviant.Discard discard = 11;
     int32 initiative = 12;
     string ownerId = 13;
+    int32 maxHp = 14;
 }
