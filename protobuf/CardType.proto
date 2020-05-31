@@ -10,4 +10,5 @@ enum CardType {
     DEBUFF = 2;
     SUMMON = 3;
     MOVEMENT = 4;
+    HEAL = 5;
 }
