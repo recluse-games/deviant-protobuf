@@ -28,4 +28,5 @@ message Entity {
     int32 initiative = 12;
     string ownerId = 13;
     int32 maxHp = 14;
+    int32 maxAp = 15;
 }
