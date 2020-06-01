@@ -8,4 +8,5 @@ enum Classes {
     WARRIOR = 0;
     MAGE = 1;
     PRIEST = 2;
+    WALL = 3;
 }
