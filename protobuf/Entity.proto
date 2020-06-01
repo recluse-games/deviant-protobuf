@@ -29,4 +29,5 @@ message Entity {
     string ownerId = 13;
     int32 maxHp = 14;
     int32 maxAp = 15;
+    string name = 16;
 }
