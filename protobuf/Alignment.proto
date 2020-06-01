@@ -7,4 +7,5 @@ option go_package = 'deviant';
 enum Alignment {
     FRIENDLY = 0;
     UNFRIENDLY = 1;
+    NEUTRAL = 2;
 }
