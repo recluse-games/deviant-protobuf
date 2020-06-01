@@ -2,6 +2,7 @@ syntax = "proto3";
 
 package Deviant;
 
+import "Alignment.proto";
 import "Board.proto";
 import "Entity.proto";
 import "Turn.proto";
@@ -15,4 +16,5 @@ message Encounter {
     Turn turn = 4;
     repeated string activeEntityOrder = 5;
     Deviant.Entity activeEntity = 6;
+    Deviant.Alignment winningAlignment = 7;
 }
