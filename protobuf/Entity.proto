@@ -10,6 +10,7 @@ import "Hand.proto";
 import "Deck.proto";
 import "Discard.proto";
 import "EntityStateNames.proto";
+import "EntityRotationNames.proto";
 
 option go_package = 'deviant';
 
@@ -30,4 +31,5 @@ message Entity {
     int32 maxHp = 14;
     int32 maxAp = 15;
     string name = 16;
+    Deviant.EntityRotationNames rotation = 17;
 }
