@@ -29,7 +29,7 @@ message EncounterRequest {
   Deviant.EntityStateAction entityStateAction = 7;
   Deviant.EntityGetAction entityGetAction = 8;
   Deviant.EncounterCreateAction encounterCreateAction = 9;
-  Deviant.EntityRotateAction entityRotateAction = 9;
+  Deviant.EntityRotateAction entityRotateAction = 10;
 }
 
 // The response message containing the greetings
