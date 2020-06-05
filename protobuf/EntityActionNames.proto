@@ -11,5 +11,5 @@ enum EntityActionNames {
     DISCARD = 3;
     NOTHING = 4;
     CHANGE_PHASE = 5;
-    ROTATE = 5;
+    ROTATE = 6;
 }
