@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = 'deviant';
+
+message EntityLocation {
+    int32 X = 1;
+    int32 Y = 2;
+}
