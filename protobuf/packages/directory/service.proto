@@ -8,8 +8,8 @@ import "player.proto";
 import "id.proto";
 
 service Directory {
-    rpc GetUser(ID) returns (Player) {}
-    rpc UpdateUser(Player) returns (Player) {}
-    rpc CreateUser(Player) returns (Player) {}
-    rpc DeleteUser(ID) returns (ID) {}
+    rpc GetPlayer(ID) returns (Player) {}
+    rpc UpdatePlayer(Player) returns (Player) {}
+    rpc CreatePlayer(Player) returns (Player) {}
+    rpc DeletePlayer(ID) returns (ID) {}
 }
