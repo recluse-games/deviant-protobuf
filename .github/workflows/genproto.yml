@@ -48,6 +48,13 @@ jobs:
         protoc --proto_path='deviant-protobuf/protobuf/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/ deviant-protobuf/protobuf/*
         protoc --proto_path='deviant-protobuf/protobuf/' --csharp_out=deviant-protobuf/genproto/cs/ deviant-protobuf/protobuf/*
 
+        protoc --proto_path='deviant-protobuf/protobuf/packages/directory/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/directory/ deviant-protobuf/protobuf/packages/directory/*.proto
+        protoc --proto_path='deviant-protobuf/protobuf/packages/directory/' --csharp_out=deviant-protobuf/genproto/cs/directory deviant-protobuf/protobuf/packages/directory/*.proto
+
+        protoc --proto_path='deviant-protobuf/protobuf/packages/instance_shard/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/instance_shard deviant-protobuf/protobuf/packages/instance_shard/*.proto
+        protoc --proto_path='deviant-protobuf/protobuf/packages/instance_shard/' --csharp_out=deviant-protobuf/genproto/cs/instance_shard deviant-protobuf/protobuf/packages/instance_shard/*.proto
+
+
     - uses: stefanzweifel/git-auto-commit-action@v4.1.6
       with:
         commit_message: Apply automatic changes
@@ -61,7 +68,7 @@ jobs:
         commit_options: '--no-verify --signoff'
 
         # Optional glob pattern of files which should be added to the commit
-        file_pattern: genproto/go/*.pb.go genproto/cs/*.cs
+        file_pattern: genproto/go/**/*.pb.go genproto/cs/**/*.cs
 
         # Optional local file path to the repository
         repository: deviant-protobuf
