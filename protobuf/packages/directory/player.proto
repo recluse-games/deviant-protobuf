@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Directory;
+
+option go_package = ".;directory";
+
+import "id.proto";
+
+message Player {
+    Directory.ID id = 1;
+    string name = 2;
+}

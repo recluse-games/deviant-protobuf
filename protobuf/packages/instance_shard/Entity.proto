@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "Alignment.proto";
+import "Attachment.proto";
+import "Classes.proto";
+import "Conditions.proto";
+import "Hand.proto";
+import "Deck.proto";
+import "Discard.proto";
+import "EntityStateNames.proto";
+import "EntityRotationNames.proto";
+
+option go_package = ".;deviant";
+
+message Entity {
+    string id = 1;
+    int32 hp = 2;
+    int32 ap = 3;
+    Deviant.EntityStateNames state = 4;
+    Deviant.Alignment alignment = 5;
+    Deviant.Classes class = 6;
+    repeated Deviant.Conditions conditions = 7;
+    repeated Deviant.Attachment attachments = 8;
+    Deviant.Hand hand = 9;
+    Deviant.Deck deck = 10;
+    Deviant.Discard discard = 11;
+    int32 initiative = 12;
+    string ownerId = 13;
+    int32 maxHp = 14;
+    int32 maxAp = 15;
+    string name = 16;
+    Deviant.EntityRotationNames rotation = 17;
+}

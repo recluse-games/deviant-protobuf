@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Directory;
+
+option go_package = ".;directory";
+
+message ID {
+    string id = 1;
+}

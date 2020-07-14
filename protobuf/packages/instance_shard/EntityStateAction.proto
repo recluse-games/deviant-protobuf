@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+import "EntityStateNames.proto";
+
+message EntityStateAction {
+    string id = 1;
+    Deviant.EntityStateNames state = 2;
+}

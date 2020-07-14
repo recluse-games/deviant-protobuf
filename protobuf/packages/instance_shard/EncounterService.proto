@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "Encounter.proto";
+import "EntityActionNames.proto";
+import "EntityMoveAction.proto";
+import "EntityPlayAction.proto";
+import "EntityTargetAction.proto";
+import "EntityStateAction.proto";
+import "EntityGetAction.proto";
+import "EncounterCreateAction.proto";
+import "EntityRotateAction.proto";
+
+option go_package = ".;deviant";
+
+service EncounterService {
+  rpc UpdateEncounter (stream EncounterRequest) returns ( stream EncounterResponse);
+}
+
+// The request message containing the user's name.
+message EncounterRequest {
+  string playerId = 1;
+  Deviant.Encounter encounter = 2;
+  Deviant.EntityActionNames entityActionName = 3;
+  Deviant.EntityMoveAction entityMoveAction = 4;
+  Deviant.EntityPlayAction entityPlayAction = 5;
+  Deviant.EntityTargetAction entityTargetAction = 6;
+  Deviant.EntityStateAction entityStateAction = 7;
+  Deviant.EntityGetAction entityGetAction = 8;
+  Deviant.EncounterCreateAction encounterCreateAction = 9;
+  Deviant.EntityRotateAction entityRotateAction = 10;
+}
+
+// The response message containing the greetings
+message EncounterResponse {
+  string playerId = 1;
+  Deviant.Encounter encounter = 2;
+}

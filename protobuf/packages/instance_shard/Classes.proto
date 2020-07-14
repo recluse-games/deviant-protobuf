@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+
+enum Classes {
+    WARRIOR = 0;
+    MAGE = 1;
+    PRIEST = 2;
+    WALL = 3;
+}

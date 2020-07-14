@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Directory;
+
+option go_package = ".;directory";
+
+import "player.proto";
+import "id.proto";
+
+service Directory {
+    rpc GetUser(ID) returns (Player) {}
+    rpc UpdateUser(Player) returns (Player) {}
+    rpc CreateUser(Player) returns (Player) {}
+    rpc DeleteUser(ID) returns (ID) {}
+}

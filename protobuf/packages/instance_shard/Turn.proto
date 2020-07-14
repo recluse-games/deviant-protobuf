@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "TurnPhaseNames.proto";
+
+option go_package = ".;deviant";
+
+message Turn {
+    string id = 1;
+    Deviant.TurnPhaseNames phase = 2;
+}

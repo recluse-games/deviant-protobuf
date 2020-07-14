@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+import "EntityRotationNames.proto";
+
+message EntityRotateAction {
+    string id = 1;
+    Deviant.EntityRotationNames rotation = 2;
+}

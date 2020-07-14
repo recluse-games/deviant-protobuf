@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+
+enum CardType {
+    ATTACK = 0;
+    BUFF = 1;
+    DEBUFF = 2;
+    SUMMON = 3;
+    MOVEMENT = 4;
+    HEAL = 5;
+    BLOCK = 6;
+}
