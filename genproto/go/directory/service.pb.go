@@ -34,21 +34,22 @@ var file_service_proto_rawDesc = []byte{
 	0x0a, 0x0d, 0x73, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12,
 	0x09, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x1a, 0x0c, 0x70, 0x6c, 0x61, 0x79,
 	0x65, 0x72, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x1a, 0x08, 0x69, 0x64, 0x2e, 0x70, 0x72, 0x6f,
-	0x74, 0x6f, 0x32, 0xd4, 0x01, 0x0a, 0x09, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79,
-	0x12, 0x2d, 0x0a, 0x07, 0x47, 0x65, 0x74, 0x55, 0x73, 0x65, 0x72, 0x12, 0x0d, 0x2e, 0x44, 0x69,
-	0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44, 0x1a, 0x11, 0x2e, 0x44, 0x69, 0x72,
-	0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x22, 0x00, 0x12,
-	0x34, 0x0a, 0x0a, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x55, 0x73, 0x65, 0x72, 0x12, 0x11, 0x2e,
-	0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72,
-	0x1a, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61,
-	0x79, 0x65, 0x72, 0x22, 0x00, 0x12, 0x34, 0x0a, 0x0a, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x55,
-	0x73, 0x65, 0x72, 0x12, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e,
-	0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x1a, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f,
-	0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x22, 0x00, 0x12, 0x2c, 0x0a, 0x0a, 0x44,
-	0x65, 0x6c, 0x65, 0x74, 0x65, 0x55, 0x73, 0x65, 0x72, 0x12, 0x0d, 0x2e, 0x44, 0x69, 0x72, 0x65,
-	0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44, 0x1a, 0x0d, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63,
-	0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44, 0x22, 0x00, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x3b, 0x64,
-	0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x74, 0x6f, 0x32, 0xdc, 0x01, 0x0a, 0x09, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79,
+	0x12, 0x2f, 0x0a, 0x09, 0x47, 0x65, 0x74, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x12, 0x0d, 0x2e,
+	0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44, 0x1a, 0x11, 0x2e, 0x44,
+	0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x22,
+	0x00, 0x12, 0x36, 0x0a, 0x0c, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x50, 0x6c, 0x61, 0x79, 0x65,
+	0x72, 0x12, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c,
+	0x61, 0x79, 0x65, 0x72, 0x1a, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79,
+	0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x22, 0x00, 0x12, 0x36, 0x0a, 0x0c, 0x43, 0x72, 0x65,
+	0x61, 0x74, 0x65, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x12, 0x11, 0x2e, 0x44, 0x69, 0x72, 0x65,
+	0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x1a, 0x11, 0x2e, 0x44,
+	0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x50, 0x6c, 0x61, 0x79, 0x65, 0x72, 0x22,
+	0x00, 0x12, 0x2e, 0x0a, 0x0c, 0x44, 0x65, 0x6c, 0x65, 0x74, 0x65, 0x50, 0x6c, 0x61, 0x79, 0x65,
+	0x72, 0x12, 0x0d, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44,
+	0x1a, 0x0d, 0x2e, 0x44, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79, 0x2e, 0x49, 0x44, 0x22,
+	0x00, 0x42, 0x0d, 0x5a, 0x0b, 0x2e, 0x3b, 0x64, 0x69, 0x72, 0x65, 0x63, 0x74, 0x6f, 0x72, 0x79,
+	0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var file_service_proto_goTypes = []interface{}{
@@ -56,14 +57,14 @@ var file_service_proto_goTypes = []interface{}{
 	(*Player)(nil), // 1: Directory.Player
 }
 var file_service_proto_depIdxs = []int32{
-	0, // 0: Directory.Directory.GetUser:input_type -> Directory.ID
-	1, // 1: Directory.Directory.UpdateUser:input_type -> Directory.Player
-	1, // 2: Directory.Directory.CreateUser:input_type -> Directory.Player
-	0, // 3: Directory.Directory.DeleteUser:input_type -> Directory.ID
-	1, // 4: Directory.Directory.GetUser:output_type -> Directory.Player
-	1, // 5: Directory.Directory.UpdateUser:output_type -> Directory.Player
-	1, // 6: Directory.Directory.CreateUser:output_type -> Directory.Player
-	0, // 7: Directory.Directory.DeleteUser:output_type -> Directory.ID
+	0, // 0: Directory.Directory.GetPlayer:input_type -> Directory.ID
+	1, // 1: Directory.Directory.UpdatePlayer:input_type -> Directory.Player
+	1, // 2: Directory.Directory.CreatePlayer:input_type -> Directory.Player
+	0, // 3: Directory.Directory.DeletePlayer:input_type -> Directory.ID
+	1, // 4: Directory.Directory.GetPlayer:output_type -> Directory.Player
+	1, // 5: Directory.Directory.UpdatePlayer:output_type -> Directory.Player
+	1, // 6: Directory.Directory.CreatePlayer:output_type -> Directory.Player
+	0, // 7: Directory.Directory.DeletePlayer:output_type -> Directory.ID
 	4, // [4:8] is the sub-list for method output_type
 	0, // [0:4] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -109,10 +110,10 @@ const _ = grpc.SupportPackageIsVersion6
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type DirectoryClient interface {
-	GetUser(ctx context.Context, in *ID, opts ...grpc.CallOption) (*Player, error)
-	UpdateUser(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error)
-	CreateUser(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error)
-	DeleteUser(ctx context.Context, in *ID, opts ...grpc.CallOption) (*ID, error)
+	GetPlayer(ctx context.Context, in *ID, opts ...grpc.CallOption) (*Player, error)
+	UpdatePlayer(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error)
+	CreatePlayer(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error)
+	DeletePlayer(ctx context.Context, in *ID, opts ...grpc.CallOption) (*ID, error)
 }
 
 type directoryClient struct {
@@ -123,36 +124,36 @@ func NewDirectoryClient(cc grpc.ClientConnInterface) DirectoryClient {
 	return &directoryClient{cc}
 }
 
-func (c *directoryClient) GetUser(ctx context.Context, in *ID, opts ...grpc.CallOption) (*Player, error) {
+func (c *directoryClient) GetPlayer(ctx context.Context, in *ID, opts ...grpc.CallOption) (*Player, error) {
 	out := new(Player)
-	err := c.cc.Invoke(ctx, "/Directory.Directory/GetUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Directory.Directory/GetPlayer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *directoryClient) UpdateUser(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error) {
+func (c *directoryClient) UpdatePlayer(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error) {
 	out := new(Player)
-	err := c.cc.Invoke(ctx, "/Directory.Directory/UpdateUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Directory.Directory/UpdatePlayer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *directoryClient) CreateUser(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error) {
+func (c *directoryClient) CreatePlayer(ctx context.Context, in *Player, opts ...grpc.CallOption) (*Player, error) {
 	out := new(Player)
-	err := c.cc.Invoke(ctx, "/Directory.Directory/CreateUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Directory.Directory/CreatePlayer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *directoryClient) DeleteUser(ctx context.Context, in *ID, opts ...grpc.CallOption) (*ID, error) {
+func (c *directoryClient) DeletePlayer(ctx context.Context, in *ID, opts ...grpc.CallOption) (*ID, error) {
 	out := new(ID)
-	err := c.cc.Invoke(ctx, "/Directory.Directory/DeleteUser", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/Directory.Directory/DeletePlayer", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
@@ -161,101 +162,101 @@ func (c *directoryClient) DeleteUser(ctx context.Context, in *ID, opts ...grpc.C
 
 // DirectoryServer is the server API for Directory service.
 type DirectoryServer interface {
-	GetUser(context.Context, *ID) (*Player, error)
-	UpdateUser(context.Context, *Player) (*Player, error)
-	CreateUser(context.Context, *Player) (*Player, error)
-	DeleteUser(context.Context, *ID) (*ID, error)
+	GetPlayer(context.Context, *ID) (*Player, error)
+	UpdatePlayer(context.Context, *Player) (*Player, error)
+	CreatePlayer(context.Context, *Player) (*Player, error)
+	DeletePlayer(context.Context, *ID) (*ID, error)
 }
 
 // UnimplementedDirectoryServer can be embedded to have forward compatible implementations.
 type UnimplementedDirectoryServer struct {
 }
 
-func (*UnimplementedDirectoryServer) GetUser(context.Context, *ID) (*Player, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method GetUser not implemented")
+func (*UnimplementedDirectoryServer) GetPlayer(context.Context, *ID) (*Player, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method GetPlayer not implemented")
 }
-func (*UnimplementedDirectoryServer) UpdateUser(context.Context, *Player) (*Player, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method UpdateUser not implemented")
+func (*UnimplementedDirectoryServer) UpdatePlayer(context.Context, *Player) (*Player, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdatePlayer not implemented")
 }
-func (*UnimplementedDirectoryServer) CreateUser(context.Context, *Player) (*Player, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method CreateUser not implemented")
+func (*UnimplementedDirectoryServer) CreatePlayer(context.Context, *Player) (*Player, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method CreatePlayer not implemented")
 }
-func (*UnimplementedDirectoryServer) DeleteUser(context.Context, *ID) (*ID, error) {
-	return nil, status.Errorf(codes.Unimplemented, "method DeleteUser not implemented")
+func (*UnimplementedDirectoryServer) DeletePlayer(context.Context, *ID) (*ID, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method DeletePlayer not implemented")
 }
 
 func RegisterDirectoryServer(s *grpc.Server, srv DirectoryServer) {
 	s.RegisterService(&_Directory_serviceDesc, srv)
 }
 
-func _Directory_GetUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Directory_GetPlayer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ID)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(DirectoryServer).GetUser(ctx, in)
+		return srv.(DirectoryServer).GetPlayer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/Directory.Directory/GetUser",
+		FullMethod: "/Directory.Directory/GetPlayer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(DirectoryServer).GetUser(ctx, req.(*ID))
+		return srv.(DirectoryServer).GetPlayer(ctx, req.(*ID))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Directory_UpdateUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Directory_UpdatePlayer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Player)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(DirectoryServer).UpdateUser(ctx, in)
+		return srv.(DirectoryServer).UpdatePlayer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/Directory.Directory/UpdateUser",
+		FullMethod: "/Directory.Directory/UpdatePlayer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(DirectoryServer).UpdateUser(ctx, req.(*Player))
+		return srv.(DirectoryServer).UpdatePlayer(ctx, req.(*Player))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Directory_CreateUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Directory_CreatePlayer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Player)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(DirectoryServer).CreateUser(ctx, in)
+		return srv.(DirectoryServer).CreatePlayer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/Directory.Directory/CreateUser",
+		FullMethod: "/Directory.Directory/CreatePlayer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(DirectoryServer).CreateUser(ctx, req.(*Player))
+		return srv.(DirectoryServer).CreatePlayer(ctx, req.(*Player))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Directory_DeleteUser_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Directory_DeletePlayer_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(ID)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(DirectoryServer).DeleteUser(ctx, in)
+		return srv.(DirectoryServer).DeletePlayer(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/Directory.Directory/DeleteUser",
+		FullMethod: "/Directory.Directory/DeletePlayer",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(DirectoryServer).DeleteUser(ctx, req.(*ID))
+		return srv.(DirectoryServer).DeletePlayer(ctx, req.(*ID))
 	}
 	return interceptor(ctx, in, info, handler)
 }
@@ -265,20 +266,20 @@ var _Directory_serviceDesc = grpc.ServiceDesc{
 	HandlerType: (*DirectoryServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
-			MethodName: "GetUser",
-			Handler:    _Directory_GetUser_Handler,
+			MethodName: "GetPlayer",
+			Handler:    _Directory_GetPlayer_Handler,
 		},
 		{
-			MethodName: "UpdateUser",
-			Handler:    _Directory_UpdateUser_Handler,
+			MethodName: "UpdatePlayer",
+			Handler:    _Directory_UpdatePlayer_Handler,
 		},
 		{
-			MethodName: "CreateUser",
-			Handler:    _Directory_CreateUser_Handler,
+			MethodName: "CreatePlayer",
+			Handler:    _Directory_CreatePlayer_Handler,
 		},
 		{
-			MethodName: "DeleteUser",
-			Handler:    _Directory_DeleteUser_Handler,
+			MethodName: "DeletePlayer",
+			Handler:    _Directory_DeletePlayer_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
