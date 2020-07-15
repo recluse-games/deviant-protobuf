@@ -45,9 +45,6 @@ jobs:
     # Generate the protocol buffers using protoc.
     - name: Generate Protocol Buffers
       run: |
-        protoc --proto_path='deviant-protobuf/protobuf/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/ deviant-protobuf/protobuf/*
-        protoc --proto_path='deviant-protobuf/protobuf/' --csharp_out=deviant-protobuf/genproto/cs/ deviant-protobuf/protobuf/*
-
         protoc --proto_path='deviant-protobuf/protobuf/packages/directory/' --go_out=plugins=grpc:deviant-protobuf/genproto/go/directory/ deviant-protobuf/protobuf/packages/directory/*.proto
         protoc --proto_path='deviant-protobuf/protobuf/packages/directory/' --csharp_out=deviant-protobuf/genproto/cs/directory deviant-protobuf/protobuf/packages/directory/*.proto
 
