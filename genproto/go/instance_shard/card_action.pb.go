@@ -94,7 +94,7 @@ func (x *CardAction) GetStatus() CardActionStatusTypes {
 	if x != nil {
 		return x.Status
 	}
-	return CardActionStatusTypes_UNBLOCKED
+	return CardActionStatusTypes_EMPTY
 }
 
 func (x *CardAction) GetTargetingType() CardActionTargetingTypes {
