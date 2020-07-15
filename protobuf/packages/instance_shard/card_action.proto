@@ -13,12 +13,12 @@ message CardAction {
     CardType type = 2;
     CardActionStatusTypes status = 3;
     CardActionTargetingTypes targeting_type = 4;
-    repeated Deviant.CardAction north = 5;
-    repeated Deviant.CardAction south = 6;
-    repeated Deviant.CardAction east = 7;
-    repeated Deviant.CardAction west = 8;
-    repeated Deviant.CardAction north_east = 9;
-    repeated Deviant.CardAction north_west = 10;
-    repeated Deviant.CardAction south_east = 11;
-    repeated Deviant.CardAction south_west = 12;
+    repeated Deviant.CardAction up = 5;
+    repeated Deviant.CardAction down = 6;
+    repeated Deviant.CardAction left = 7;
+    repeated Deviant.CardAction right = 8;
+    repeated Deviant.CardAction up_left = 9;
+    repeated Deviant.CardAction up_right = 10;
+    repeated Deviant.CardAction down_left = 11;
+    repeated Deviant.CardAction down_right = 12;
 }
