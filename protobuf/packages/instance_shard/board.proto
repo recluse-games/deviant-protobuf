@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "tiles.proto";
+import "entities.proto";
+import "tile.proto";
+
+option go_package = ".;deviant";
+message Board {
+    Deviant.Tiles tiles = 1;
+    Deviant.Entities entities = 2;
+    repeated Deviant.Tile overlayTiles = 3;
+}

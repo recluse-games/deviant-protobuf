@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "card_action.proto";
+import "card_type.proto";
+
+option go_package = ".;deviant";
+message Card {
+    string id = 1;
+    string instanceId = 2;
+    string backId = 3;
+    int32 cost = 4;
+    int32 damage = 5;
+    string title = 6;
+    string flavor = 7;
+    string description = 8;
+    Deviant.CardType type = 9;
+    Deviant.CardAction action = 10;
+}

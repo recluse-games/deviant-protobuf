@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+message Play {
+    string id = 1;
+    int32 x = 2;
+    int32 y = 3;
+}

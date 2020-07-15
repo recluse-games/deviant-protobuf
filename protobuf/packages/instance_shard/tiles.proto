@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Deviant;
+
+import "tiles_row.proto";
+
+option go_package = ".;deviant";
+message Tiles {
+    repeated Deviant.TilesRow tiles = 1;
+}
