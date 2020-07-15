@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+
+enum CardActionTargetingTypes {
+    PATH = 0;
+    GROUND = 1;
+}

@@ -2,10 +2,23 @@ syntax = "proto3";
 
 package Deviant;
 
-import "pattern.proto";
+import "card_action_status_types.proto";
+import "card_action_targeting_types.proto";
+import "card_type.proto";
 
 option go_package = ".;deviant";
+
 message CardAction {
     string id = 1;
-    repeated Deviant.Pattern pattern = 2;
+    CardType type = 2;
+    CardActionStatusTypes status = 3;
+    CardActionTargetingTypes targeting_type = 4;
+    repeated Deviant.CardAction north = 5;
+    repeated Deviant.CardAction south = 6;
+    repeated Deviant.CardAction east = 7;
+    repeated Deviant.CardAction west = 8;
+    repeated Deviant.CardAction north_east = 9;
+    repeated Deviant.CardAction north_west = 10;
+    repeated Deviant.CardAction south_east = 11;
+    repeated Deviant.CardAction south_west = 12;
 }
