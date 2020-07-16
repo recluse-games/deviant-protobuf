@@ -15,6 +15,6 @@ message Card {
     string title = 6;
     string flavor = 7;
     string description = 8;
-    repeated Deviant.CardType types = 9;
+    Deviant.CardType type = 9;
     repeated Deviant.CardAction actions = 10;
 }
