@@ -5,5 +5,5 @@ package Deviant;
 option go_package = ".;deviant";
 enum EntityTargetActionTypes {
     MOVE = 0;
-    PLAY = 1;
+    CARD = 1;
 }

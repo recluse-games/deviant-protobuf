@@ -9,5 +9,5 @@ option go_package = ".;deviant";import "tile.proto";
 message EntityTargetAction {
     string id = 1;
     Deviant.EntityTargetActionTypes type = 2;
-    string cardID = 3;
+    string cardId = 3;
 }
