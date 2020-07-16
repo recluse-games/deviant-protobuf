@@ -4,7 +4,7 @@ package Deviant;
 
 import "entity_target_action_types.proto";
 
-option go_package = ".;deviant";import "tile.proto";
+option go_package = ".;deviant";
 
 message EntityTargetAction {
     string id = 1;
