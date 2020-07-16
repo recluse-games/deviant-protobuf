@@ -21,4 +21,5 @@ message CardAction {
     repeated Deviant.CardAction up_right = 10;
     repeated Deviant.CardAction down_left = 11;
     repeated Deviant.CardAction down_right = 12;
+    bool origin = 13;
 }
