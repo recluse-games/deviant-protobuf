@@ -8,4 +8,5 @@ enum CardActionStatusTypes {
     EMPTY = 0;
     UNBLOCKED = 1;
     BLOCKED = 2;
+    HIT = 3;
 }
