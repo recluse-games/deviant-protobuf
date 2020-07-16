@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package Deviant;
+
+option go_package = ".;deviant";
+enum EntityTargetActionTypes {
+    MOVE = 0;
+    PLAY = 1;
+}

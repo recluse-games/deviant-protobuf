@@ -2,9 +2,12 @@ syntax = "proto3";
 
 package Deviant;
 
+import "entity_target_action_types.proto";
+
 option go_package = ".;deviant";import "tile.proto";
 
 message EntityTargetAction {
     string id = 1;
-    repeated Deviant.Tile tiles = 2;
+    Deviant.EntityTargetActionTypes type = 2;
+    string cardID = 3;
 }
