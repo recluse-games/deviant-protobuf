@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package Deviant;
 
+import "card_type.proto";
+
 option go_package = ".;deviant";
 message Play {
     string id = 1;
